@@ -33,5 +33,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm_flatten/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/flatten/lib/modules) \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.12.23-android16-5-g316453da9a9e-abogki441133159-4k)
 
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+
 # Inherit from the proprietary version
 include vendor/xiaomi/myron/BoardConfigVendor.mk
