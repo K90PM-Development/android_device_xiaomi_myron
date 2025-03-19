@@ -39,6 +39,10 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .regex_replace('xml=version', 'xml version'),
     (
+        'vendor/lib64/libcameraopt.so',
+    ): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
+    (
        'odm/lib64/camera/components/com.qti.node.dewarp.so',
        'odm/lib64/hw/com.qti.chi.override.so',
        'odm/lib64/libcamximageformatutils.so',
