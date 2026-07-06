@@ -10,7 +10,6 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -28,10 +27,64 @@ namespace_imports = [
 ]
 
 lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
 }
 
 blob_fixups: blob_fixups_user_type = {
-}
+    (
+        'odm/etc/camera/snsc_bokeh_motiontuning.xml',
+        'odm/etc/camera/snsc_enhance_motiontuning.xml',
+        'odm/etc/camera/snsc_noface_motiontuning.xml',
+        'odm/etc/camera/snsc_motiontuning.xml'
+    ): blob_fixup()
+        .regex_replace('xml=version', 'xml version'),
+    (
+       'odm/lib64/camera/components/com.qti.node.dewarp.so',
+       'odm/lib64/hw/com.qti.chi.override.so',
+       'odm/lib64/libcamximageformatutils.so',
+       'odm/lib64/libchifeature2.so',
+       'odm/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.graphics.allocator-V1-ndk.so',
+            'android.hardware.graphics.allocator-V2-ndk.so'
+        ),
+    (
+       'vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so',
+       'vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so',
+       'vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.camera.device-V1-ndk.so',
+            'android.hardware.camera.device-V2-ndk.so'
+        ),
+    (
+        'vendor/lib64/libultrahdr_myron.so', 
+    ): blob_fixup()
+        .replace_needed(
+            'libjpegencoder.so',
+            'libjpegencoder_myron.so'
+        )
+        .replace_needed(
+            'libjpegdecoder.so',
+            'libjpegdecoder_myron.so'
+        ),
+    (
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.losslessjpeg.so'
+    ): blob_fixup()
+        .replace_needed(
+            'libdng_sdk.so',
+            'libdng_sdk-myron.so'
+        ),
+    (
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so', 
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.gainmap.so'
+    ): blob_fixup()
+        .replace_needed(
+            'libultrahdr.so',
+            'libultrahdr_myron.so'
+        ),
+}  # fmt: skip
 
 module = ExtractUtilsModule(
     'myron',
@@ -39,7 +92,6 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
-    add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':
