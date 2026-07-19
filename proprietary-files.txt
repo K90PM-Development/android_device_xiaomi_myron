@@ -14,7 +14,7 @@ odm/etc/acdbdata/Mi/HLCNet_se125_36660_8850.eai
 odm/etc/acdbdata/Mi/HLCNet_USB_sett7_0016_2000.eai
 odm/etc/acdbdata/Mi/hs_fuse1_8850.eai
 odm/etc/acdbdata/Mi/hs_fuse2_8850.eai
-odm/etc/acdbdata/Mi/Mi_acdb_cal.acdb:odm/etc/acdbdata/Mi_acdb_cal.acdb
+odm/etc/acdbdata/Mi/Mi_acdb_cal.acdb
 odm/etc/acdbdata/Mi/Mi_workspaceFileXml.qwsp
 odm/etc/acdbdata/Mi/model_eai_int8_8850_970k_AIoff.eai
 odm/etc/acdbdata/Mi/model924_eai_int8_8850.eai
@@ -248,6 +248,7 @@ odm/etc/camera/bokehmodel.data
 odm/etc/camera/cameracustomize.json
 odm/etc/camera/cameradfx_config.json
 odm/etc/camera/cameraopt_perf.json
+odm/etc/camera/cameraopt_reservemem.json
 odm/etc/camera/cameraopt_vendor.json
 odm/etc/camera/cameraopt.json
 odm/etc/camera/camerascene.json
@@ -296,7 +297,9 @@ odm/etc/camera/gan_text.minn
 odm/etc/camera/harbo_o1_sr_tone.minn
 odm/etc/camera/harbo_se_config.json
 odm/etc/camera/harbo_se_opencl.bin
+odm/etc/camera/harbo_se_p3_tele_fullsize_quad_4frame_concert.minn
 odm/etc/camera/harbo_se_p3_tele_fullsize_quad_4frame.minn
+odm/etc/camera/harbo_se_p3_tele_isz_quad_8frame_concert.minn
 odm/etc/camera/harbo_se_p3_tele_isz_quad_8frame.minn
 odm/etc/camera/harbo_se_p3_tele_quad_1frame.minn
 odm/etc/camera/harbo_se_p3_wide_quad_1frame.minn
@@ -333,8 +336,13 @@ odm/etc/camera/mdbokeh_ngt.bin
 odm/etc/camera/merge_aitone_coeff.minn
 odm/etc/camera/merge_aitone_guide.minn
 odm/etc/camera/merge_clartiy.minn
+odm/etc/camera/merge_concert_aitone_coeff.minn
+odm/etc/camera/merge_concert_aitone_guide.minn
 odm/etc/camera/merge_deflare.minn
+odm/etc/camera/merge_defog_portrait.minn
 odm/etc/camera/merge_defog.minn
+odm/etc/camera/merge_fire_aitone_coeff.minn
+odm/etc/camera/merge_fire_aitone_guide.minn
 odm/etc/camera/merge_lmkportrait_back.minn
 odm/etc/camera/mi_tuning/default.bin
 odm/etc/camera/mi_tuning/myron_aac_ov50m_ultra_i.bin
@@ -395,7 +403,11 @@ odm/etc/camera/model_ai_pp2pd6.minn
 odm/etc/camera/model_aiaealbedo.minn
 odm/etc/camera/model_header.json
 odm/etc/camera/motioncap_auto_tuning.xml
+odm/etc/camera/motioncap_concert_auto_tuning.xml
+odm/etc/camera/motioncap_concert_enhance_tuning.xml
 odm/etc/camera/motioncap_enhance_tuning.xml
+odm/etc/camera/motioncap_fireworks_auto_tuning.xml
+odm/etc/camera/motioncap_fireworks_enhance_tuning.xml
 odm/etc/camera/myron/bokehsettings.json
 odm/etc/camera/nature_segmentation/lm_nature_segmentation_model
 odm/etc/camera/nature_segmentation/lm_nature_segmentation_pipeline
@@ -420,6 +432,8 @@ odm/etc/camera/scene_cls_model/scene_cls_inout_model
 odm/etc/camera/scene_cls_model/scene_cls_inout_pipeline
 odm/etc/camera/scene_cls_model/scene_cls_model
 odm/etc/camera/scene_cls_model/scene_cls_pipeline
+odm/etc/camera/scene_cls_model/scene_cls_single_model
+odm/etc/camera/scene_cls_model/scene_cls_single_pipeline
 odm/etc/camera/sceneDetection.xml
 odm/etc/camera/sd_decoder.minn
 odm/etc/camera/sd_encoder.minn
@@ -975,6 +989,8 @@ odm/lib64/camera/com.qti.tuned.myron_semco_s5kjn5_tele_i.bin
 odm/lib64/camera/com.qti.tuned.myron_sunny_ovx9500_wide_i.bin
 
 # Camera (vendor)
+vendor/etc/camera/cameraopt_perf.json
+vendor/etc/camera/cameraopt_vendor.json
 vendor/lib64/camera/bitmlconfig.bin
 vendor/lib64/camera/camxfl115indices.bin
 vendor/lib64/camera/camxfl300v1indices.bin
