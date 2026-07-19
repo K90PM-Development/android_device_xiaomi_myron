@@ -13,6 +13,7 @@ $(call inherit-product, vendor/xiaomi/myron/myron-vendor.mk)
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator-V1-ndk.vendor \
     vendor.qti.hardware.camera.offlinecamera-V2-ndk.vendor
 
 # Soong namespaces
