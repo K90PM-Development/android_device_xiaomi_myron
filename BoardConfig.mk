@@ -5,9 +5,9 @@
 #
 
 DEVICE_PATH := device/xiaomi/myron
-KERNEL_PATH := $(DEVICE_PATH)-kernel
+KERNEL_PATH := kernel/xiaomi/myron-prebuilt
 
-# Inherit from sm8650-common
+# Inherit from sm8850-common
 include device/xiaomi/sm8850-common/BoardConfigCommon.mk
 
 # Display
