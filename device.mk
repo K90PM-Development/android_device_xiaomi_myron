@@ -11,6 +11,9 @@ $(call inherit-product, device/xiaomi/sm8850-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/myron/myron-vendor.mk)
 
+# Call miuicamera
+$(call inherit-product, device/xiaomi/myron-miuicamera/device.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V1-ndk.vendor \
