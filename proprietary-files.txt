@@ -824,6 +824,7 @@ odm/lib64/libmialgo_snsc.so
 odm/lib64/libmialgo_srdehaze.so
 odm/lib64/libmialgo_utils.so
 odm/lib64/libMiEmojiEffect.so
+odm/lib64/libMiMotion.so
 odm/lib64/libmiocr.so
 odm/lib64/libmiphone_capture_bokeh.so
 odm/lib64/libmiphone_capture_depth.so
