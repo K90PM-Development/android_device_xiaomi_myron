@@ -1,0 +1,14 @@
+#
+# Copyright (C) 2026 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# eUICC
+on post-fs && property:ro.boot.hwc=CN
+    # CN Variant does not have eSIM
+    mount none /dev/null /odm/overlay/MyronEuiccOverlay.apk bind
+    mount none /dev/null /product/etc/permissions/privapp-permissions-euiccgoogle.xml bind
+    mount none /dev/null /product/priv-app/EuiccGoogle/EuiccGoogle.apk bind
+    mount none /dev/null /system_ext/priv-app/XiaomiEsimSwitcher/XiaomiEsimSwitcher.apk bind
+    mount none /dev/null /system_ext/priv-app/XiaomiEuicc/XiaomiEuicc.apk bind
