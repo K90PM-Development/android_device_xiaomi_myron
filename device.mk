@@ -21,11 +21,10 @@ PRODUCT_PACKAGES += \
 
 # eUICC
 PRODUCT_PACKAGES += \
-    XiaomiEuicc \
-    XiaomiEsimSwitcher
+    XiaomiEsimSwitcher \
+    XiaomiEuicc
         
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     $(LOCAL_PATH)/init/init.myron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.myron.rc
 
 # Properties
