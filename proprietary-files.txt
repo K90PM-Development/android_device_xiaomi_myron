@@ -1570,6 +1570,10 @@ odm/firmware/focaltech_ts_fw_myron.bin
 odm/firmware/myron_fts_thp_config.ini
 odm/firmware/Conf_MultipleTest.ini
 
+# Touchscreen neural model
+odm/firmware/film_model.tflite
+odm/firmware/glove_model.tflite
+
 # Thermal config
 odm/etc/thermal-4k.conf
 odm/etc/thermal-arvr.conf
