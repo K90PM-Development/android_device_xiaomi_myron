@@ -11,4 +11,5 @@
         android:isStatic="true"
         android:priority="801"
         android:targetPackage="android"
+        android:targetName="MyronEuiccOverlay" />
 </manifest>
