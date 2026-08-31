@@ -1500,9 +1500,9 @@ odm/etc/display/qdcm_calib_data_xiaomi_p11u_42_0d_0a_cmd_mode_dsc_dsi_panel.json
 odm/lib64/hw/fingerprint.goodix_us2.so:odm/lib64/hw/fingerprint.goodix_us2.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
 
-# RIL
+# RIL - myron_global 16 BP2A.250605.031.A3 OS3.0.3.0.WPMIDXM
 odm/etc/me_config.xml
-system_ext/framework/xiaomi-modem-common.jar
+system_ext/framework/xiaomi-modem-common.jar|30900f8d132cd8ab2d586a44bdf09c0bfcb4f863
 
 # Sensors
 odm/etc/sensors/config/5cm_blue.png
