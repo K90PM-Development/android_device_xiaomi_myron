@@ -5,7 +5,7 @@
 #
 
 # eUICC
-on post-fs-data && property:ro.boot.hwc=CN
+on post-fs && property:ro.boot.hwc=CN
     # CN Variant does not have eSIM
     mount none /dev/null /odm/overlay/MyronEuiccOverlay.apk bind
     mount none /dev/null /product/etc/permissions/android.hardware.telephony.euicc.mep.xml bind
