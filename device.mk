@@ -50,3 +50,6 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayMyron \
     SystemUIResMyron \
     WifiOverlayMyron
+
+# Udfps
+TARGET_HAS_UDFPS := true
