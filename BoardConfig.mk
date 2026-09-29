@@ -24,5 +24,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
+# Platform
+BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
 # Inherit from the proprietary version
 include vendor/xiaomi/myron/BoardConfigVendor.mk
