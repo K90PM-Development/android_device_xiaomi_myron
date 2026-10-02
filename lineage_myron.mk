@@ -27,8 +27,8 @@ TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_INCLUDE_ACCORD := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="myron-user 17 CP2A.260605.016 OS4.0.0.15.XPMCNXM release-keys" \
-    BuildFingerprint=Redmi/myron/myron:17/CP2A.260605.016/OS4.0.0.15.XPMCNXM:user/release-keys \
+    BuildDesc="myron-user 17 CP2A.260605.016 OS4.0.0.33.XPMCNXM release-keys" \
+    BuildFingerprint=Redmi/myron/myron:17/CP2A.260605.016/OS4.0.0.33.XPMCNXM:user/release-keys \
     DeviceName=myron \
     DeviceProduct=myron \
     SystemDevice=missi \
