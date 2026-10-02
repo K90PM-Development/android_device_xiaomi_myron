@@ -1,11 +1,11 @@
 [
   {
-    "repository": "vendor_xiaomi_myron",
-    "target_path": "vendor/xiaomi/myron"
+    "repository": "device_xiaomi_myron-miuicamera",
+    "target_path": "device/xiaomi/myron-miuicamera"
   },
   {
-    "repository": "kernel_xiaomi_myron-prebuilt",
-    "target_path": "kernel/xiaomi/myron-prebuilt"
+    "repository": "device_xiaomi_sm8850-common",
+    "target_path": "device/xiaomi/sm8850-common"
   },
   {
     "repository": "Evolution-X-Devices/hardware_xiaomi",
@@ -14,11 +14,19 @@
     "remote": "github-non-los"
   },
   {
-    "repository": "device_xiaomi_myron-miuicamera",
-    "target_path": "device/xiaomi/myron-miuicamera"
+    "repository": "kernel_xiaomi_myron-prebuilt",
+    "target_path": "kernel/xiaomi/myron-prebuilt"
+  },
+  {
+    "repository": "vendor_xiaomi_myron",
+    "target_path": "vendor/xiaomi/myron"
   },
   {
     "repository": "vendor_xiaomi_myron-miuicamera",
     "target_path": "vendor/xiaomi/myron-miuicamera"
+  },
+  {
+    "repository": "vendor_xiaomi_sm8850-common",
+    "target_path": "vendor/xiaomi/sm8850-common"
   }
 ]
