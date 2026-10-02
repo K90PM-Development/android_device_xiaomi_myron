@@ -19,6 +19,6 @@
   },
   {
     "repository": "vendor_xiaomi_myron-miuicamera",
-    "target_path": "vendor/xiaomi/myron-miuicamera",
+    "target_path": "vendor/xiaomi/myron-miuicamera"
   }
 ]
