@@ -19,10 +19,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V1-ndk.vendor \
     vendor.qti.hardware.camera.offlinecamera-V2-ndk.vendor
 
-# Dolby
-PRODUCT_PACKAGES += \
-    XiaomiDolby
-
 # eUICC
 PRODUCT_PACKAGES += \
     XiaomiEsimSwitcher \
