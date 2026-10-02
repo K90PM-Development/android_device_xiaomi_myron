@@ -17,7 +17,7 @@ $(call inherit-product, device/xiaomi/myron/device.mk)
 ## Device identifier
 PRODUCT_DEVICE := myron
 PRODUCT_NAME := lineage_myron
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 25102RKBEC
 PRODUCT_MANUFACTURER := Xiaomi
 
@@ -26,4 +26,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_INCLUDE_ACCORD := false
 
-BUILD_FINGERPRINT := Xiaomi/myron/myron:16/BQ2A.250705.001-BP2A.250605.031.A3/OS3.0.303.0.WPMCNXM:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="myron-user 17 CP2A.260605.016 OS4.0.0.15.XPMCNXM release-keys" \
+    BuildFingerprint=Redmi/myron/myron:17/CP2A.260605.016/OS4.0.0.15.XPMCNXM:user/release-keys \
+    DeviceName=myron \
+    DeviceProduct=myron \
+    SystemDevice=missi \
+    SystemName=missi
