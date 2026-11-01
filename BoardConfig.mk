@@ -17,12 +17,9 @@ include device/xiaomi/myron-miuicamera/BoardConfig.mk
 TARGET_SCREEN_DENSITY := 520
 
 # DTBO
-BOOT_KERNEL_MODULES += \
-	focaltech_touch_3683.ko
-
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
-	tfa98xx_dlkm.ko \
-	focaltech_touch_3683.ko
+    tfa98xx_dlkm.ko \
+    focaltech_touch_3683.ko
 
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
