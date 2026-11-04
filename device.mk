@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiEuicc \
     XiaomiEsimSwitcher
-        
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     $(LOCAL_PATH)/init/init.myron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.myron.rc
@@ -39,5 +39,8 @@ PRODUCT_PACKAGES += \
     ApertureOverlayMyron \
     FrameworksResMyron \
     MyronEuiccOverlay \
+    NfcOverlayMyron \
     SettingsOverlayMyron \
-    SystemUIResMyron
+    SettingsProviderOverlayMyron \
+    SystemUIResMyron \
+    WifiOverlayMyron

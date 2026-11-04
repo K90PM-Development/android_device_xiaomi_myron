@@ -17,8 +17,8 @@ $(call inherit-product, device/xiaomi/myron/device.mk)
 ## Device identifier
 PRODUCT_DEVICE := myron
 PRODUCT_NAME := lineage_myron
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := REDMI
 PRODUCT_MODEL := 25102RKBEC
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := Xiaomi/myron/myron:16/BQ2A.250705.001-BP2A.250605.031.A3/OS3.0.303.0.WPMCNXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/myron/myron:17/CP2A.260605.016/OS4.0.0.33.XPMCNXM:user/release-keys
